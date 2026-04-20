@@ -52,4 +52,4 @@ This project closely matches the provided Figma specifications with a polished, 
    ```
 
 ## Deployment Link
-[Insert Vercel/Netlify Link Here]
+https://koinx-woad-nine.vercel.app/
