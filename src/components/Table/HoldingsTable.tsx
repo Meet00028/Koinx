@@ -148,23 +148,6 @@ export const HoldingsTable: React.FC = () => {
     toggleCoinSelection(coinId);
   }, [toggleCoinSelection]);
 
-  const GainDisplay = ({ gain, balance, symbol }: { gain: number; balance: number; symbol: string }) => {
-    const isPositive = gain >= 0;
-    const colorClass = isPositive ? 'text-green-500' : 'text-red-500';
-    const sign = isPositive ? '+' : '';
-    
-    return (
-      <div className="flex flex-col gap-0.5">
-        <span className={`${colorClass} font-medium`}>
-          {sign}{formatCurrency(gain)}
-        </span>
-        <span className="text-xs text-slate-500">
-          {formatNumber(balance, 4)} {symbol}
-        </span>
-      </div>
-    );
-  };
-
   return (
     <div className="bg-[#1e1f25] border border-slate-800 rounded-xl overflow-hidden shadow-sm">
       <div className="p-6 border-b border-slate-800/80 bg-[#1e1f25]">
